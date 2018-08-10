@@ -10,5 +10,7 @@ class Wellcome : AppCompatActivity() {
         setContentView(R.layout.activity_wellcome)
 
 
+
+
     }
 }
