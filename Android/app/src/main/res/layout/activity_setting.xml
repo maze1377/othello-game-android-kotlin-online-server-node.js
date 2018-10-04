@@ -1,0 +1,228 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/colorDivider"
+    tools:context=".Setting">
+
+    <TextView
+        android:id="@+id/idTextSetting"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/username"
+        android:fontFamily="serif"
+        android:textColor="?attr/textColorPrimary"
+        android:textSize="25sp"
+        app:layout_constraintBottom_toBottomOf="@id/idSetting"
+        app:layout_constraintLeft_toLeftOf="@id/langTextView"
+        app:layout_constraintTop_toTopOf="@+id/idSetting"
+        />
+
+    <TextView
+        android:id="@+id/idSetting"
+        android:textSize="23sp"
+        android:gravity="start"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="25dp"
+        android:textColor="?attr/textColorPrimary"
+        android:text=""
+        android:layout_marginStart="5dp"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintHorizontal_bias="0.1"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintLeft_toRightOf="@id/idTextSetting"
+        />
+
+    <Button
+        android:id="@+id/editBtn"
+        android:layout_width="wrap_content"
+        android:layout_height="40dp"
+        android:layout_marginTop="10dp"
+        android:background="@drawable/btn_menu_background"
+        android:fontFamily="serif"
+        android:gravity="center"
+        android:text="@string/edit"
+        android:textAllCaps="false"
+        android:textColor="?attr/textColorPrimary"
+        android:textSize="20sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/idSetting" />
+
+    <TextView
+        android:id="@+id/langTextView"
+        android:layout_width="150dp"
+        android:layout_height="wrap_content"
+        android:fontFamily="serif"
+        android:gravity="left"
+        android:text="@string/language"
+        android:textColor="?attr/textColorSecondary"
+        android:textSize="25sp"
+        android:layout_marginTop="10dp"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toLeftOf="@id/langSpinnerId"
+        app:layout_constraintTop_toBottomOf="@id/editBtn"/>
+
+    <Spinner
+        android:foregroundGravity="right"
+        android:gravity="right"
+        android:id="@+id/langSpinnerId"
+        android:layout_width="150dp"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toTopOf="@id/langTextView"
+        app:layout_constraintLeft_toRightOf="@id/langTextView"
+        app:layout_constraintRight_toRightOf="parent"
+        android:layout_marginStart="15dp"
+        />
+
+    <TextView
+        android:gravity="left"
+        android:id="@+id/themeTextView"
+        android:layout_width="150dp"
+        android:fontFamily="serif"
+        android:layout_height="wrap_content"
+        android:textColor="?attr/textColorSecondary"
+        android:text="@string/theme"
+        android:layout_marginTop="30dp"
+        android:textSize="25sp"
+        app:layout_constraintTop_toBottomOf="@id/langTextView"
+        app:layout_constraintLeft_toLeftOf="@id/langTextView"
+        />
+
+    <Spinner
+        android:gravity="right"
+        android:id="@+id/themeSpinnerId"
+        android:layout_width="150dp"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toTopOf="@id/themeTextView"
+        app:layout_constraintRight_toRightOf="@id/langSpinnerId"
+        />
+
+    <Button
+        android:id="@+id/themeBtn"
+        android:layout_width="140dp"
+        android:layout_height="wrap_content"
+        android:background="@drawable/btn_menu_background"
+        android:fontFamily="serif"
+        android:text="@string/more_theme"
+        android:textAllCaps="false"
+        android:textColor="?attr/textColorPrimary"
+        android:textSize="20sp"
+        app:layout_constraintRight_toRightOf="@id/themeSpinnerId"
+        app:layout_constraintTop_toTopOf="@id/themeBack"
+        app:layout_constraintBottom_toBottomOf="@id/themeBack"
+        />
+
+    <TextView
+        android:id="@+id/themePre"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="25sp"
+        android:text="@string/theme_preview"
+        android:textColor="?attr/colorText"
+        app:layout_constraintTop_toBottomOf="@id/themeTextView"
+        app:layout_constraintRight_toRightOf="@id/themeSpinnerId"
+        app:layout_constraintLeft_toLeftOf="@id/themeTextView"
+        android:layout_marginTop="15dp"
+        />
+
+    <ImageView
+        android:id="@+id/themeBack"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:layout_marginTop="20dp"
+        app:layout_constraintTop_toBottomOf="@id/themePre"
+        app:layout_constraintLeft_toLeftOf="@id/themeTextView"
+        android:src="?attr/board_background"
+        />
+
+    <ImageView
+        android:id="@+id/themeCounterBlack"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginStart="10dp"
+        app:layout_constraintTop_toBottomOf="@id/themePre"
+        app:layout_constraintLeft_toRightOf="@id/themeBack"
+        android:src="?attr/black_counter"
+        />
+
+    <ImageView
+        android:id="@+id/themeCounterWhite"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:layout_marginStart="10dp"
+        app:layout_constraintTop_toBottomOf="@id/themeCounterBlack"
+        app:layout_constraintLeft_toRightOf="@id/themeBack"
+        android:src="?attr/white_counter"
+        />
+
+
+    <TextView
+        android:id="@+id/soundText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/sound_on"
+        android:textSize="25sp"
+        android:textColor="?attr/colorText"
+        app:layout_constraintTop_toBottomOf="@id/friendManageBtn"
+        android:layout_marginTop="10dp"
+        app:layout_constraintLeft_toLeftOf="@id/themeTextView"
+        />
+
+    <CheckBox
+        android:id="@+id/soundCheck"
+        android:checked="true"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintLeft_toRightOf="@id/soundText"
+        app:layout_constraintTop_toTopOf="@id/soundText"
+        app:layout_constraintBottom_toBottomOf="@id/soundText"
+        android:layout_marginStart="15dp"
+        />
+
+    <Button
+        android:id="@+id/friendManageBtn"
+        android:layout_width="200dp"
+        android:layout_height="wrap_content"
+        android:background="@drawable/btn_menu_background"
+        android:fontFamily="serif"
+        android:text="@string/friends_manage"
+        android:textAllCaps="false"
+        android:textColor="?attr/textColorPrimary"
+        android:textSize="20sp"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/themeBack"
+        android:layout_marginTop="10dp"
+        />
+
+    <TextView
+        android:id="@+id/otherOptionText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Show Valid move"
+        android:textSize="25sp"
+        app:layout_constraintTop_toBottomOf="@id/soundText"
+        android:textColor="?attr/colorText"
+        app:layout_constraintLeft_toLeftOf="@id/soundText"
+        android:layout_marginEnd="10dp"
+        android:layout_marginTop="10dp"
+        />
+
+    <CheckBox
+        android:id="@+id/otherOptionCheck"
+        android:checked="true"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toTopOf="@id/otherOptionText"
+        app:layout_constraintLeft_toRightOf="@id/otherOptionText"
+        app:layout_constraintBottom_toBottomOf="@id/otherOptionText"
+        android:layout_marginStart="15dp"
+        />
+
+
+</android.support.constraint.ConstraintLayout>

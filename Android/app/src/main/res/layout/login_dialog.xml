@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:padding="25dp">
+
+    <TextView
+        android:id="@+id/text"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="hello i'm still alive"
+        android:textSize="23sp"
+        android:fontFamily="serif"
+        android:layout_gravity="center"
+        android:gravity="center"
+        android:textColor="?attr/textColorPrimary"
+        android:layout_marginTop="10dp"
+        />
+
+    <LinearLayout
+        android:layout_marginTop="20dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        >
+
+        <Button
+            android:id="@+id/accept"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/yes"
+            android:textAllCaps="false"
+            android:textSize="20sp"
+            android:layout_marginEnd="10dp"
+            android:fontFamily="sans-serif"
+            android:background="@drawable/btn_menu_background"
+            />
+
+        <Button
+            android:layout_marginStart="10dp"
+            android:id="@+id/reject"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/no"
+            android:textAllCaps="false"
+            android:textSize="20sp"
+            android:fontFamily="sans-serif"
+            android:background="@drawable/btn_menu_background"
+
+            />
+    </LinearLayout>
+
+</LinearLayout>

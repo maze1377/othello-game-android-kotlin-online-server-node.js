@@ -1,0 +1,126 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="?attr/menu_background"
+    android:id="@+id/back"
+    tools:context=".Menu">
+
+
+    <ImageView
+        android:contentDescription="@string/game_logo"
+        android:id="@+id/othello"
+        android:src="@mipmap/black_othello"
+        android:layout_marginTop="30dp"
+        android:layout_width="300dp"
+        android:layout_height="120dp"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        />
+
+    <Button
+        android:id="@+id/rightArrow"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:onClick="changeMenu"
+        android:scaleType="fitCenter"
+        android:background="@mipmap/right_arrow"
+        app:layout_constraintTop_toTopOf="@id/imageMenu"
+        app:layout_constraintBottom_toBottomOf="@id/imageMenu"
+        app:layout_constraintLeft_toRightOf="@id/btnMenu"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintVertical_bias="0.5"
+        />
+
+    <Button
+        android:id="@+id/leftArrow"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:onClick="changeMenu"
+        android:scaleType="fitCenter"
+        android:background="@mipmap/left_arrow"
+        app:layout_constraintBottom_toBottomOf="@id/imageMenu"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toLeftOf="@id/btnMenu"
+        app:layout_constraintTop_toTopOf="@id/imageMenu" />
+
+    <Button
+        android:id="@+id/btnMenu"
+        android:layout_width="200dp"
+        android:layout_height="70dp"
+        android:layout_marginBottom="8dp"
+        android:background="?attr/menu_mainBtn_background"
+        android:fontFamily="sans-serif"
+        android:text="@string/single_player"
+        android:textAllCaps="false"
+        android:textColor="?attr/colorText"
+        android:textSize="30sp"
+        android:onClick="openMenu"
+        android:layout_marginTop="50dp"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/othello" />
+
+
+    <ImageView
+        android:contentDescription="@string/nothing"
+        android:id="@+id/imageMenu"
+        android:layout_width="200dp"
+        android:layout_height="200dp"
+        android:onClick="openMenu"
+        android:visibility="visible"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/btnMenu"
+        android:layout_marginTop="10dp"
+        android:layout_marginBottom="20dp"
+        android:src="@mipmap/pl_vs_ai"
+        android:scaleType="fitCenter"
+        />
+
+    <android.support.constraint.ConstraintLayout
+        android:id="@+id/messageBox"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:visibility="visible"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent">
+
+        <TextView
+            app:layout_constraintTop_toTopOf="parent"
+            android:id="@+id/messageTextView"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:gravity="start"
+            android:padding="10dp"
+            android:text="@string/need_to_sign_in"
+            android:textSize="23sp"
+            app:layout_constraintHorizontal_chainStyle="spread_inside"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintRight_toLeftOf="@id/messageBtn"
+            tools:layout_editor_absoluteY="0dp" />
+
+        <Button
+            android:id="@+id/messageBtn"
+            app:layout_constraintTop_toTopOf="parent"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:background="@drawable/btn_menu_background"
+            android:fontFamily="serif"
+            android:text="@string/view"
+            android:textAllCaps="false"
+            android:textSize="20sp"
+            android:layout_marginEnd="20dp"
+            app:layout_constraintHorizontal_chainStyle="spread"
+            app:layout_constraintLeft_toRightOf="@id/messageTextView"
+            app:layout_constraintRight_toRightOf="parent" />
+
+    </android.support.constraint.ConstraintLayout>
+
+
+</android.support.constraint.ConstraintLayout>

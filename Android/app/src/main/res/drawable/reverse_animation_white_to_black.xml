@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<animation-list xmlns:android="http://schemas.android.com/apk/res/android"
+    android:oneshot="true"
+    >
+
+    <item
+        android:drawable="@drawable/white_counter_only_desined"
+        android:duration="100"
+        />
+
+    <item
+        android:drawable="@drawable/white_to_black_1"
+        android:duration="100"
+        />
+
+    <item
+        android:drawable="@drawable/white_to_black_2"
+        android:duration="100"
+        />
+
+    <item
+        android:drawable="@drawable/white_to_black_3"
+        android:duration="100"
+        />
+
+    <item
+        android:drawable="@drawable/black_counter_only_desined"
+        android:duration="100"
+        />
+
+</animation-list>

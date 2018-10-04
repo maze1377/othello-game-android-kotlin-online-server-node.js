@@ -4,7 +4,12 @@
   "description": "",
   "main": "index.js",
   "scripts": {
+    "preinstall": "npm install pm2 -g",
+    "start": "node ./node_modules/.bin/pm2-runtime index.js -i 2",
     "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "engines": {
+    "node": "9.6.1"
   },
   "repository": {
     "type": "git",
@@ -17,8 +22,18 @@
   },
   "homepage": "https://gitlab.com/akbarimahdi1377u/Othello_game#README",
   "dependencies": {
+    "bcrypt": "^3.0.0",
+    "compression": "^1.7.3",
     "express": "^4.16.3",
-    "joi": "^13.5.2",
-    "mongoose": "^5.2.7"
+    "express-async-errors": "^3.0.0",
+    "express-fileupload": "^0.4.0",
+    "helmet": "^3.13.0",
+    "joi": "^13.6.0",
+    "lodash": "^4.17.10",
+    "mongoose": "^5.2.7",
+    "node-schedule": "^1.3.0",
+    "pm2": "^3.1.2",
+    "trim-request": "^1.0.6",
+    "winston": "^3.1.0"
   }
 }

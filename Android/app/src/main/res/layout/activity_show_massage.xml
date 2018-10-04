@@ -1,0 +1,98 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:background="?attr/colorPrimaryLight"
+    tools:context=".ShowMassage">
+
+    <TextView
+        android:id="@+id/senderName"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"
+        android:layout_margin="20dp"
+        android:text="masalan felani"
+        android:textSize="20sp"
+        android:fontFamily="sans-serif"
+        android:textColor="?attr/textColorPrimary"
+        />
+
+    <TextView
+        android:id="@+id/senderEmail"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toBottomOf="@id/senderName"
+        app:layout_constraintLeft_toLeftOf="@id/senderName"
+        android:text="felani@gmail.com"
+        android:fontFamily="sans-serif"
+        android:textColor="?attr/textColorSecondary"
+        android:textSize="15sp"
+        />
+
+    <TextView
+        android:id="@+id/massageText"
+        android:layout_width="350dp"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toBottomOf="@id/senderEmail"
+        app:layout_constraintLeft_toLeftOf="@id/senderName"
+        android:padding="10dp"
+        android:text="salam man alireza hastam karet dashtam sjdffabljdlskbfdsabfs
+sdfkndsfaknbdskf"
+        android:textColor="?attr/textColorPrimary"
+        android:fontFamily="sans-serif"
+        android:textSize="18sp"
+        />
+
+    <TextView
+        android:id="@+id/massageTime"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="@id/senderName"
+        android:text="15:12"
+        android:textColor="?attr/textColorSecondary"
+        android:layout_marginRight="20dp"
+        />
+
+    <android.support.constraint.ConstraintLayout
+        android:id="@+id/friendReqAnswerLayout"
+        android:visibility="invisible"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/massageText"
+        >
+
+        <Button
+            android:id="@+id/acceptFriendReq"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/accept"
+            android:textAllCaps="false"
+            android:background="@drawable/btn_menu_background"
+            android:textColor="?attr/textColorPrimary"
+            android:textSize="18sp"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintRight_toLeftOf="@id/rejectFriendReq"
+            />
+
+        <Button
+            android:id="@+id/rejectFriendReq"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/reject"
+            android:textAllCaps="false"
+            android:background="@drawable/btn_menu_background"
+            android:textColor="?attr/textColorPrimary"
+            android:textSize="18sp"
+            app:layout_constraintRight_toRightOf="parent"
+            app:layout_constraintLeft_toRightOf="@id/acceptFriendReq"
+            />
+
+    </android.support.constraint.ConstraintLayout>
+
+
+</android.support.constraint.ConstraintLayout>

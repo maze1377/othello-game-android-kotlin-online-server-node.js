@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">Othello</string>
+    <string name="none">هیچکدام</string>
+    <string name="touch_to_start">برای شروع لمس کنید</string>
+    <string name="setting">تنظیمات</string>
+    <string name="exit">خروج</string>
+    <string name="online">آنلاین</string>
+    <string name="multi_player">چندنفره</string>
+    <string name="turn">نوبت :</string>
+    <string name="score">امتیاز :</string>
+    <string name="secondPlayer">بازیکن دوم</string>
+    <string name="firstPlayer">بازیکن اول</string>
+    <string name="next">بعدی</string>
+    <string name="name">اسم</string>
+    <string name="white">سفید</string>
+    <string name="black">سیاه</string>
+    <string name="single_player">یک نفره</string>
+    <string name="nothing">  </string>
+    <string name="auto_find">جستجو خودکار</string>
+    <string name="network_stability">وضعیت اتصال</string>
+    <string name="add_friend">افزودن دوست</string>
+    <string name="accept">قبول کردن</string>
+    <string name="reject">رد کردن</string>
+    <string name="player_request_to_play">درخواست بازی کردن</string>
+    <string name="title_activity_login">ورود</string>
+
+    <!-- Strings related to login -->
+    <string name="prompt_email">رایانامه</string>
+    <string name="username">نام کاربری</string>
+    <string name="prompt_password">رمز ورود</string>
+    <string name="action_sign_in">ورود</string>
+    <string name="action_sign_in_short">ورود</string>
+    <string name="error_invalid_email">رایانامه نامعتبر</string>
+    <string name="error_invalid_password">رمز کوتاه</string>
+    <string name="error_incorrect_password">رمز اشتباه</string>
+    <string name="error_field_required">جاهای خالی را پر کنید</string>
+    <string name="permission_rationale">"Contacts permissions are needed for providing email
+        completions."
+    </string>
+    <string name="sing_in_as_guest">ورود به عنوان مهمان</string>
+    <string name="friend_request">درخواست دوستی</string>
+    <string name="register">ثبت نام</string>
+    <string name="language">زبان</string>
+    <string name="edit">نغییردادن</string>
+    <string name="theme">پوسته</string>
+    <string name="more_theme">پوسته های بیشتر</string>
+    <string name="sound_volume">میزان صدا</string>
+
+    <string name="def">پیش فرض</string>
+    <string name="themeOne">آبی</string>
+    <string name="dark">تاریک</string>
+    <string name="login">داخل شدن</string>
+
+    //
+
+    <string name="blue">آبی</string>
+    <string name="wood">چوبی</string>
+
+    <string name="en">انگلیسی</string>
+    <string name="fa">Persian</string>
+    <string name="ru">Russian</string>
+    <string name="sound_on">Sound on</string>
+    <string name="theme_preview">Theme preview</string>
+    <string name="friend_setting">Friend Setting</string>
+    <string name="plOne">PlayerOne</string>
+    <string name="playertwo">DeepGreen</string>
+    <string name="_2">2</string>
+    <string name="game_logo">Game Logo</string>
+    <string name="ok">ok</string>
+    <string name="my_friend">My Friend</string>
+    <string name="friends_manage">friends manage</string>
+    <string name="your_request_message">Your request message</string>
+    <string name="network_state">Network state :</string>
+    <string name="yes">Yes</string>
+    <string name="no">No</string>
+    <string name="view">view</string>
+    <string name="vs">Vs</string>
+    <string name="play_with_friends">Play with Friends</string>
+    <string name="send_request">Send Request</string>
+    <string name="send_friend_request">Send friend request</string>
+    <string name="need_to_sign_in">need to sign in</string>
+
+</resources>

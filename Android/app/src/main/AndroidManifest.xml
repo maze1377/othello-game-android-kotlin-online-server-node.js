@@ -2,20 +2,47 @@
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
     package="alireza.com.othello">
 
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+
     <application
         android:allowBackup="true"
-        android:icon="@mipmap/ic_launcher"
+        android:icon="@mipmap/icon"
         android:label="@string/app_name"
-        android:roundIcon="@mipmap/ic_launcher_round"
+        android:roundIcon="@mipmap/icon"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
-        <activity android:name=".Wellcome">
+        <activity
+            android:name=".Welcome"
+            android:theme="@style/Theme.AppCompat.Light.NoActionBar">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
+        <activity
+            android:name=".MultiPlayerGame"
+            android:theme="@style/Theme.AppCompat" />
+        <activity
+            android:name=".Menu"
+            android:theme="@style/Theme.AppCompat.Light.NoActionBar" />
+        <activity android:name=".SinglePlayer" />
+        <activity android:name=".OnlineGetInfo" />
+        <activity
+            android:name=".Login"
+            android:windowSoftInputMode="adjustResize" />
+        <activity android:name=".LoginOrNot" />
+        <activity
+            android:name=".Register"
+            android:windowSoftInputMode="adjustResize" />
+        <activity android:name=".Setting" />
+        <activity
+            android:name=".FriendManage"
+            android:windowSoftInputMode="adjustResize" />
+        <activity android:name=".OnlineGame" />
+        <activity android:name=".Massage" />
+        <activity android:name=".ShowMassage"></activity>
     </application>
 
 </manifest>

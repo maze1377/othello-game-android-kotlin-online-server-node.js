@@ -1,3 +1,78 @@
 <resources>
     <string name="app_name">Othello</string>
+    <string name="none">none</string>
+    <string name="touch_to_start">Touch to start</string>
+    <string name="setting">Setting</string>
+    <string name="exit">Exit</string>
+    <string name="online">Online</string>
+    <string name="multi_player">Multi Player</string>
+    <string name="turn">Turn :</string>
+    <string name="score">Score :</string>
+    <string name="secondPlayer">Second Player</string>
+    <string name="firstPlayer">First Player</string>
+    <string name="next">Next</string>
+    <string name="name">name</string>
+    <string name="white">white</string>
+    <string name="black">black</string>
+    <string name="single_player">Single Player</string>
+    <string name="nothing">nothing</string>
+    <string name="auto_find">Auto Find</string>
+    <string name="network_stability">Network Stability</string>
+    <string name="add_friend">Add Friend</string>
+    <string name="accept">Accept</string>
+    <string name="reject">Reject</string>
+    <string name="player_request_to_play">Player request to play</string>
+    <string name="title_activity_login">Sign in</string>
+
+    <!-- Strings related to login -->
+    <string name="prompt_email">Email</string>
+    <string name="username">Username : </string>
+    <string name="prompt_password">Password</string>
+    <string name="action_sign_in">Sign in</string>
+    <string name="action_sign_in_short">Sign in</string>
+    <string name="error_invalid_email">This email address is invalid</string>
+    <string name="error_invalid_password">This password is too short</string>
+    <string name="error_incorrect_password">This password is incorrect</string>
+    <string name="error_field_required">This field is required</string>
+    <string name="permission_rationale">"Contacts permissions are needed for providing email
+        completions."
+    </string>
+    <string name="sing_in_as_guest">Sing in as Guest</string>
+    <string name="friend_request">Friend Request</string>
+    <string name="register">Register</string>
+    <string name="language">Language</string>
+    <string name="edit">Edit</string>
+    <string name="theme">Theme</string>
+    <string name="more_theme">More Theme</string>
+    <string name="sound_volume">Sound volume</string>
+
+    <string name="def">default</string>
+    <string name="blue">blue</string>
+    <string name="dark">dark</string>
+    <string name="wood">wooden</string>
+
+    <string name="en">English</string>
+    <string name="fa">Persian</string>
+    <string name="ru">Russian</string>
+    <string name="sound_on">Sound on</string>
+    <string name="theme_preview">Theme preview</string>
+    <string name="friend_setting">Friend Setting</string>
+    <string name="plOne">PlayerOne</string>
+    <string name="playertwo">DeepGreen</string>
+    <string name="_2">2</string>
+    <string name="game_logo">Game Logo</string>
+    <string name="ok">ok</string>
+    <string name="my_friend">My Friend</string>
+    <string name="friends_manage">friends manage</string>
+    <string name="your_request_message">Your request message</string>
+    <string name="network_state">Network state :</string>
+    <string name="yes">Yes</string>
+    <string name="no">No</string>
+    <string name="view">view</string>
+    <string name="vs">Vs</string>
+    <string name="play_with_friends">Play with Friends</string>
+    <string name="login">Login</string>
+    <string name="send_request">Send Request</string>
+    <string name="send_friend_request">Send friend request</string>
+    <string name="need_to_sign_in">need to sign in</string>
 </resources>

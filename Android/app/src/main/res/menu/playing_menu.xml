@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item
+        android:id="@+id/Setting"
+        android:icon="@mipmap/settings"
+        android:title="@string/setting"
+        app:showAsAction="ifRoom" />
+
+
+    <item
+        android:id="@+id/FriendsSetting"
+        android:icon="@mipmap/friend_manage"
+        android:title="@string/friend_setting"
+        app:showAsAction="ifRoom"
+        />
+
+
+</menu>

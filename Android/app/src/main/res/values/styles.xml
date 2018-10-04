@@ -1,11 +1,108 @@
 <resources>
 
     <!-- Base application theme. -->
-    <style name="AppTheme" parent="Theme.AppCompat.Light.DarkActionBar">
-        <!-- Customize your theme here. -->
+    <style name="AppTheme" parent="Theme.AppCompat.NoActionBar">
+
         <item name="colorPrimary">@color/colorPrimary</item>
         <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
+        <item name="colorPrimaryLight">@color/colorPrimaryLight</item>
         <item name="colorAccent">@color/colorAccent</item>
+        <item name="textColorPrimary">@color/colorPrimaryText</item>
+        <item name="colorDivider">@color/colorDivider</item>
+        <item name="colorText">@color/colorText</item>
+        <item name="textColorSecondary">@color/colorSecondaryText</item>
+
+        <item name="board_background">@mipmap/empty_board</item>
+        <item name="empty_counter">@mipmap/empty_counter</item>
+        <item name="black_counter">@mipmap/black_counter_only_desined</item>
+        <item name="white_counter">@mipmap/white_counter_only_desined</item>
+        <item name="valid_counter">@mipmap/valid_move_counter</item>
+
+        <item name="menu_background">@color/colorPrimary</item>
+        <item name="menu_mainBtn_background">@drawable/btn_menu_background</item>
     </style>
+
+    <style name="wooden" parent="Theme.AppCompat.NoActionBar">
+
+        <item name="colorPrimary">@color/colorPrimary_wood</item>
+        <item name="colorPrimaryDark">@color/colorPrimaryDark_wood</item>
+        <item name="colorAccent">@color/colorSecondaryText_wood</item>
+        <item name="textColorPrimary">@color/colorPrimaryText_wood</item>
+        <item name="colorPrimaryLight">@color/colorPrimaryLight_wood</item>
+        <item name="colorDivider">@color/colorDivider_wood</item>
+        <item name="colorText">@color/colorText_wood</item>
+        <item name="textColorSecondary">@color/colorSecondaryText_wood</item>
+
+        <item name="board_background">@mipmap/board_empty_wood6</item>
+        <item name="empty_counter">@mipmap/empty_counter</item>
+        <item name="black_counter">@mipmap/black_counter_only_desined</item>
+        <item name="white_counter">@mipmap/white_counter_only_desined</item>
+        <item name="valid_counter">@mipmap/valid_move_counter</item>
+
+        <item name="menu_background">@mipmap/main_back</item>
+        <item name="menu_mainBtn_background">@mipmap/btn_back</item>
+    </style>
+
+    <style name="dark" parent="Theme.AppCompat.NoActionBar" >
+
+        <item name="colorPrimary">@color/colorPrimary_dark</item>
+        <item name="colorPrimaryDark">@color/colorPrimaryDark_dark</item>
+        <item name="colorPrimaryLight">@color/colorPrimaryLight_dark</item>
+        <item name="colorAccent">@color/colorAccent_dark</item>
+        <item name="textColorPrimary">@color/colorPrimaryText_dark</item>
+        <item name="colorDivider">@color/colorDivider_dark</item>
+        <item name="colorText">@color/colorText_dark</item>
+        <item name="textColorSecondary">@color/colorSecondaryText_dark</item>
+
+        <item name="board_background">@mipmap/empty_board_other</item>
+        <item name="empty_counter">@mipmap/empty_counter</item>
+        <item name="black_counter">@mipmap/black_counter_only_desined</item>
+        <item name="white_counter">@mipmap/white_counter_only_desined</item>
+        <item name="valid_counter">@mipmap/valid_move_counter</item>
+
+        <item name="menu_background">@color/colorPrimary_dark</item>
+        <item name="menu_mainBtn_background">@drawable/btn_menu_background</item>
+
+
+    </style>
+
+    <style name="blue" parent="Theme.AppCompat.NoActionBar" >
+        <item name="colorPrimary">@color/colorPrimary_blue</item>
+        <item name="colorPrimaryDark">@color/colorPrimaryDark_blue</item>
+        <item name="colorPrimaryLight">@color/colorPrimaryLight_blue</item>
+        <item name="colorAccent">@color/colorAccent_blue</item>
+        <item name="textColorPrimary">@color/colorPrimaryText_blue</item>
+        <item name="colorDivider">@color/colorDivider_blue</item>
+        <item name="colorText">@color/colorText_blue</item>
+        <item name="textColorSecondary">@color/colorSecondaryText_blue</item>
+
+        <item name="board_background">@mipmap/empty_board_blue</item>
+        <item name="empty_counter">@mipmap/empty_counter</item>
+        <item name="black_counter">@mipmap/black_counter_only_desined</item>
+        <item name="white_counter">@mipmap/white_counter_only_desined</item>
+        <item name="valid_counter">@mipmap/valid_move_counter</item>
+
+        <item name="menu_background">@color/colorPrimary_blue</item>
+        <item name="menu_mainBtn_background">@drawable/btn_menu_background</item>
+
+    </style>
+
+    //game theme part
+    <attr name="board_background" format="reference"/>
+    <attr name="empty_counter" format="reference"/>
+    <attr name="black_counter" format="reference"/>
+    <attr name="white_counter" format="reference"/>
+    <attr name="valid_counter" format="reference"/>
+
+    //color theme part
+    <attr name="colorPrimaryLight" format="color"/>
+    <attr name="textColorPrimary" format="color"/>
+    <attr name="colorDivider" format="color"/>
+    <attr name="colorText" format="color"/>
+    <attr name="textColorSecondary" format="color"/>
+
+    //menu theme part
+    <attr name="menu_background" format="reference"/>
+    <attr name="menu_mainBtn_background" format="reference"/>
 
 </resources>
