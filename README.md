@@ -1,5 +1,5 @@
 # othello-game-android-kotlin-online-server-node.js
-android game sample with server.
+sample android game with server.
   
 # Server
 node.js
@@ -10,5 +10,5 @@ MongoDb
 
 MVC architecture
 
-#android
+# android
 kotlink
